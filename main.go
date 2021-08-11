@@ -52,7 +52,7 @@ func handleCallback(w http.ResponseWriter, r *http.Request) {
 
 	code := r.FormValue("code")
 
-	reqURL := fmt.Sprintf("https://github.com/login/oauth/access_token?client_id=%s&client_secret=%s&code=%s", "Iv1.d6e26d123d63e218", "f6bcb8ff88a127aaa7eca10a8eaacbfdd0dd6361", code)
+	reqURL := fmt.Sprintf("https://github.com/login/oauth/access_token?client_id=%s&client_secret=%s&code=%s", "CLIENT_ID", "CLIENT_SECRET", code)
 	resp, err := http.NewRequest("POST", reqURL, nil)
 	resp.Header.Set("Content-Type", "application/json; charset=UTF-8")
 
