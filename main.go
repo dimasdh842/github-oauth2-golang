@@ -13,8 +13,8 @@ import (
 var (
 	githubOauthConfig = &oauth2.Config{
 		RedirectURL:  "http://localhost:8080/callback",
-		ClientID:     "Iv1.d6e26d123d63e218",
-		ClientSecret: "f6bcb8ff88a127aaa7eca10a8eaacbfdd0dd6361",
+		ClientID:     "CLIENT_ID",
+		ClientSecret: "CLIENT_SECRET",
 		Scopes:       []string{"https://github.com/apps/goexampleapp"},
 		Endpoint:     github.Endpoint,
 	}
